@@ -1,8 +1,7 @@
-import express from "express";
-const app = express();
-const port = 5000;
-
 import mongoose from "mongoose";
+import app from "./app";
+const port:number = 5000;
+
 async function bootStart() {
   try {
     await mongoose.connect("mongodb://127.0.0.1:27017/test");
